@@ -1,0 +1,168 @@
+package com.lyquyduong2;
+
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="")
+public class Site implements java.io.Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private BigDecimal businessUnitId;
+	private BigDecimal siteId;
+	private String planCode;
+	private String businessCode;
+	private BigDecimal partnerId;
+	private Date contractStartDate;
+	private Date contractEndDate;
+	private String serviceName;
+	private String tradeName;
+	private String tradeNameKana;
+	private String tradeNameAlphabet;
+	private String tradeNameInChineseNotation;
+	private String brandName;
+	private String brandNameKana;
+	private String brandNameInChineseNotation;
+	private String siteUrl;
+	private Character siteOpenFlag;
+	private String expectedOpenDate;
+	private Boolean serviceSuppliedDeviceCode;
+	private Boolean storeAndCompanyAddressSameFlag;
+	private String storeAddressPostalCode;
+	private String storeAddressPrefecture;
+	private String storeAddressPrefectureKana;
+	private String storeAddressCity;
+	private String storeAddressCityKana;
+	private String storeAddressChome;
+	private String storeAddressChomeStreetAddressKana;
+	private String storeAddressBuildingName;
+	private String storeAddressBuildingNameKana;
+	private String storeAddressChineseNotation;
+	private Boolean storeAndCompanyPhoneNumberSameFlag;
+	private String storePhoneNumber;
+	private String storeOpenHoursFrom;
+	private String storeOpenHoursTo;
+	private String storeHoliday;
+	private String businessTypeId;
+	private String serviceSummary;
+	private String serviceSummaryChineseNotation;
+	private BigDecimal salesFormId;
+	private String handlingClassification;
+	private String handlingItem;
+	private String monthlySettlementHandlingAmount;
+	private String averagePurchaseAmount;
+	private String commodityAmountRangeFrom;
+	private String commodityAmountRangeTo;
+	private Character unitPriceGroup;
+	private Character liquorLicensePresenceFlag;
+	private Character pharmaceuticalLicenseFlag;
+	private Character travelLicenseFlag;
+	private Character foodAndBeverageLicenseFlag;
+	private String secondhandDealerLicenseFlag;
+	private String barberBeautyLicensePresenceFlag;
+	private String otherLicensePresenceFlag;
+	private String licenseName1;
+	private String licenseNumber1;
+	private String licenseAcquisitionDate1;
+	private String licenseName2;
+	private String licenseNumber2;
+	private String licenseAcquisitionDate2;
+	private Boolean doorToDoorSalesFlag;
+	private Boolean telemarketingSalesFlag;
+	private Boolean multilevelMarketingTransactionFlag;
+	private Boolean businessOpportunitySalesTransactionFlag;
+	private Boolean provisionOfSpecifiedContinuousServicesFlag;
+	private Boolean prepaidItemDealingFlag;
+	private Boolean cardDataNonHoldingStatusCode;
+	private String cardDataNonHoldingExpectedDate;
+	private Boolean pcidssCompliantStatusCode;
+	private String pcidssCompliantExpectedDate;
+	private Boolean authenticationServiceImplementStatusCode;
+	private String authenticationServiceImplementExpectedDate;
+	private Boolean securityCodeImplementStatusCode;
+	private String securityCodeImplementExpectedDate;
+	private Boolean unauthorizedShippingInformationUsageStatusCode;
+	private String unauthorizedShippingInformationUsageExpectedDate;
+	private Boolean attributeAndBehaviorAnalysisImplementStatusCode;
+	private String attributeAndBehaviorAnalysisEnforcementExpectedDate;
+	private Boolean otherUniqueMeasuresImplementStatusCode;
+	private String otherUniqueMeasuresImplementExpectedDate;
+	private String otherUniqueMeasuresImplementComment;
+	private String publishedUrl;
+	private Boolean publishedUrlOpenFlag;
+	private String publishedPhoneNumber;
+	private String publishedEmailAddress;
+	private String vendorPersonInCharge;
+	private Boolean vendorClassification;
+	private String vendorName;
+	private String reason;
+	private Boolean vendorAndCompanyLocationSameFlag;
+	private String vendorLocation;
+	private String vendorLocationPostalCode;
+	private String vendorLocationPrefecture;
+	private String vendorLocationCity;
+	private String vendorLocationStreetAddress;
+	private String vendorLocationBuildingName;
+	private Boolean salesVolumeClassification;
+	private String salesVolumeClassificationOtherReason;
+	private Boolean applicationExpirationDateClassification;
+	private String applicationExpirationDateClassificationOtherReason;
+	private Boolean nonProductChargeRequiredFlagSalesTax;
+	private Boolean nonProductChargeRequiredFlagShippingFee;
+	private Boolean nonProductChargeRequiredFlagOthers;
+	private String nonProductChargeRequiredOthersDescription;
+	private Boolean paymentMethodClassification;
+	private String paymentMethodExplanation;
+	private Boolean paymentDueDateClassification;
+	private String paymentDueDateClassificationOthersReason;
+	private String deliveryTimeInStock;
+	private String deliveryTimeOutOfStock;
+	private Boolean defectiveProductHandlingClassification;
+	private String defectiveProductHandlingClassificationOthersReason;
+	private String returnBeforeUse;
+	private String returnAfterUse;
+	private String returnDueDate;
+	private String returnShippingFee;
+	private Boolean giftCategory;
+	private String giftContent;
+	private String giftReceiveMeans;
+	private Boolean communicationFunctionFlag;
+	private String commentPostingMethod;
+	private String commentMonitoringSystem;
+	private String communicationFunctionConnectingServiceName;
+	private String webConvenienceStoreSettlementExpectedNumberOfHandling;
+	private Character presaleFlag;
+	private String managingDirector;
+	private String managingDirectorKana;
+	private String managingDirectorCompanyName;
+	private String managingDirectorCompanyNameKana;
+	private String managingDirectorTitle;
+	private String managingDirectorPhoneNumber;
+	private String managingDirectorFaxNumber;
+	private String managingDirectorEmail;
+	private String managingDirectorLocationPostalCode;
+	private String managingDirectorLocation;
+	private String managingDirectorLocationKana;
+	private Character businessTransferFlag;
+	private Character representativePhoneBookDisplayFlag;
+	private String mobileSiteUrl;
+	private String numberOfNetShopMonthlyTransactions;
+	private String testSiteUrl;
+	private String testSiteId;
+	private Date createdDate;
+	private String createdBy;
+	private Date updatedDate;
+	private String updatedBy;
+	private boolean removalFlag;
+
+}
