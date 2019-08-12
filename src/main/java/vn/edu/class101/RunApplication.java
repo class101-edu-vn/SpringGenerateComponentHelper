@@ -8,6 +8,8 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import vn.edu.class101.process.ModelProcessor;
+
 public class RunApplication {
 
 	private static String PACKAGE_DOMAIN = "F:\\GenerateComponentSpring\\GenerateComponentSpring\\source_model";
@@ -17,11 +19,15 @@ public class RunApplication {
 	private static String PACKAGE_DTO;
 	private static String PACKAGE_MAPPER;
 	
+	public static List<File> filesInFolder;
+	public static List<String> fileNamesInFolder;
+	
+	
 	public static void main(String[] args) {
 		try {
-			List<File> filesInFolder = Files.walk(Paths.get(PACKAGE_DOMAIN)).filter(Files::isRegularFile)
-					.map(Path::toFile).collect(Collectors.toList());
-			List<String> fileNamesInFolder = filesInFolder.stream().map(File::getName).collect(Collectors.toList());
+			ModelProcessor modelProcessor = new ModelProcessor();
+			modelProcessor.doProcess(PACKAGE_DOMAIN);
+			
 			System.out.println("End");
 		} catch (IOException e) {
 			e.printStackTrace();
